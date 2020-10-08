@@ -126,9 +126,6 @@ left: 905px;
 .intro{
     text-align: center;
 }
-.intro h2{
-    
-}
 
 .intro p{
 line-height: 1.7;
@@ -142,10 +139,6 @@ margin: 0 auto;
 .steps{
     text-align: center;
     background: #fce138;
-}
-
-.steps h2{
-    
 }
 
 .section-title{

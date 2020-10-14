@@ -273,7 +273,18 @@ flex: 1 30%;
 .trainer-bio p{
     font-size: 17px;
 }
+/*Grid*/
+.serive-grid-container{
+    display: grid;
+}
 
+.service-grid-item{
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: solid;
+    color: black;
+}
 /*Reach out style start*/
 .contact{
     background: #024e76;

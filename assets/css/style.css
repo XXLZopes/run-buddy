@@ -11,17 +11,16 @@ body {
 /*apply styles to <header> */
 header{
     padding: 20px 35px;
-    background-color: #39a6b2;
-    background-image: url("../images/hero-bg.jpg");
+    background-color: rgba(0, 0, 0, 0);
+    /* background-image: url("../images/hero-bg.jpg"); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-position: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 9999;
 }
@@ -40,21 +39,21 @@ header a {
     color: #fce138;
 }
 
-header nav {
+/* header nav {
     
     margin: 7px 0;
-}
+} */
 /* set header's li elements to be inline instead of block */
 header nav ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    /* align-items: flex-start; */
     list-style: none;
 }
 
 header nav ul li a {
-    padding: 10px 15px;
+    padding: 10px 35px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -289,6 +288,7 @@ flex: 1 30%;
 
 .trainer-3{
     background-image: url("../images/trainer-3.jpg");
+    
 }
 
 .trainer-img{

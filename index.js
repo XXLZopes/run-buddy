@@ -40,7 +40,7 @@ document.addEventListener('click', function(e) {
 });
 
 window.addEventListener('resize', ()=> {
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth >= 769) {
         burgerMenuEl.style.display="none";
         mobileNavEl.style.display="none";
         isMobileNavOpen=false;

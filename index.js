@@ -27,7 +27,6 @@ burgerMenuOnclick = ()=> {
 document.addEventListener('click', function(e) {
     e = e || window.event;
     let targeted = e.target.className;
-    console.log(targeted);
         if (targeted=="burger-menu" || targeted=="line") {
             burgerMenuOnclick();
         } else {

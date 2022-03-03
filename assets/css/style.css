@@ -589,7 +589,7 @@ flex: 1 30%;
 .mobile-screen-nav {
     position: absolute;
     right: 0;
-    margin-top: 225px;
+    margin-top: 50px;
     margin-right: 10px;
     background-color: rgba(2, 78, 118, 0.5);
     display: none;

@@ -570,8 +570,8 @@ flex: 1 30%;
 }
 
 .burger-menu {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     background-color: none;
     display: flex;
     flex-wrap: wrap;
@@ -588,7 +588,7 @@ flex: 1 30%;
 .mobile-screen-nav {
     position: absolute;
     right: 0;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-right: 10px;
     background-color: rgba(2, 78, 118, 0.5);
     display: none;
@@ -626,9 +626,9 @@ flex: 1 30%;
       header{
           background-color: #024e76;
           /*this will be applied on any screen smaller than 980px*/
-        padding-bottom: 0;
+        /* padding-bottom: 0; */
         justify-content: center;
-        position: relative;
+        position: fixed;
       }
 
       /* header h1{
@@ -670,6 +670,9 @@ flex: 1 30%;
   @media screen and (max-width: 768px){
     .large-screen-nav {
         display: none;
+    }
+    .hero-cta h2 {
+        margin-top: 20px;
     }
       section{
          padding: 30px 15px; 

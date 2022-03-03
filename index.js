@@ -22,3 +22,22 @@ document.addEventListener('click', function(e) {
         }
 });
 
+window.addEventListener('resize', ()=> {
+    if (window.innerWidth >= 769) {
+        burgerMenuEl.style.display="none";
+        mobileNavEl.style.display="none";
+        isMobileNavOpen=false;
+    } else {
+        burgerMenuEl.style.display="flex"
+    }
+});
+
+window.addEventListener('load', ()=> {
+    if (window.innerWidth >= 769) {
+        burgerMenuEl.style.display="none";
+        mobileNavEl.style.display="none";
+        isMobileNavOpen=false;
+    } else {
+        burgerMenuEl.style.display="flex"
+    }
+});

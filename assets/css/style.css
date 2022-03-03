@@ -23,6 +23,8 @@ header{
     position: fixed;
     top: 0;
     z-index: 9999;
+    width: 100%;
+    background-color: #024e76;
 }
 
 header h1 {
@@ -563,12 +565,13 @@ flex: 1 30%;
 }
 
 .burger-menu {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     background-color: none;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    display: none;
 }
 
 .line {
@@ -581,15 +584,26 @@ flex: 1 30%;
 .mobile-screen-nav {
     position: absolute;
     right: 0;
-    margin-top: 40px;
-    margin-right: 35px;
+    margin-top: 70px;
+    margin-right: 10px;
     background-color: rgba(2, 78, 118, 0.5);
     display: none;
+    border-radius: 5px;
+}
+
+.mobile-screen-nav ul {
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .mobile-screen-nav ul li {
     list-style: none;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.mobile-screen-nav ul li a:hover {
+    color:#39a6b2;
 }
 
 .mobile-screen-nav ul li:hover {
@@ -601,7 +615,7 @@ flex: 1 30%;
       header{
           background-color: #024e76;
           /*this will be applied on any screen smaller than 980px*/
-        padding-bottom: 0;
+
         justify-content: center;
         position: relative;
       }
@@ -640,9 +654,15 @@ flex: 1 30%;
     .trainer-bio h3, .trainer-bio h4{
         display: none;
     }
+    header {
+        align-items: center;
+    }
   }
   /*MEDIA QUERY FOR TABLETS AND SMALLER*/
   @media screen and (max-width: 768px){
+    .header-title {
+        font-size: 30px;
+    }
     .large-screen-nav {
         display: none;
     }

@@ -5,12 +5,17 @@
 }
 body {
     color: #39a6b2;
-    font-family: Helvetica, Arial, sans-serif;    
+    font-family: Helvetica, Arial, sans-serif;   
+    min-width: 100%; 
+}
+
+.map {
+    max-width: 100%;
 }
 
 /*apply styles to <header> */
 header{
-    padding: 20px 35px;
+    padding: 10px 35px 10px 35px;
     background-color: rgba(0, 0, 0, 0);
     /* background-image: url("../images/hero-bg.jpg"); */
     background-size: cover;
@@ -19,10 +24,13 @@ header{
     background-position: 80%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
     position: fixed;
     top: 0;
     z-index: 9999;
+    background-color: #024e76;
+    width: 100%;
 }
 
 header h1 {
@@ -581,19 +589,37 @@ flex: 1 30%;
 .mobile-screen-nav {
     position: absolute;
     right: 0;
-    margin-top: 40px;
-    margin-right: 35px;
+    margin-top: 225px;
+    margin-right: 10px;
     background-color: rgba(2, 78, 118, 0.5);
     display: none;
 }
 
 .mobile-screen-nav ul li {
     list-style: none;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-.mobile-screen-nav ul li:hover {
-    color:#024e76;
+.mobile-screen-nav ul li a{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.mobile-screen-nav ul li a:hover {
+    color:#39a6b2;
+}
+
+.service-grid-wrapper {
+    max-width: 100%;
+}
+
+.service-grid-item {
+    max-width: 100%;
+}
+
+.services, .contact {
+    min-width: 300px;
 }
 
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -711,6 +737,15 @@ flex: 1 30%;
 
   /*MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
   @media screen and (max-width: 575px){
+      
+      .title {
+          font-size: 25px;
+      }
+
+      .hero-cta h2 {
+          font-size: 25px;
+      }
+
       .hero-form button{
           width: 100%;
       }
@@ -740,3 +775,8 @@ flex: 1 30%;
       }
   }
 
+  @media screen and (max-width: 338px){
+    .map {
+        max-width: 90%;
+    }
+}

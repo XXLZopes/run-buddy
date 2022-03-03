@@ -34,7 +34,7 @@ header{
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    /* font-size: 36px; */
     color: #fce138;
     margin:0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -603,6 +603,7 @@ flex: 1 30%;
     font-size: 20px;
     margin-right: 10px;
     margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .mobile-screen-nav ul li a:hover {
@@ -621,6 +622,7 @@ flex: 1 30%;
     min-width: 300px;
 }
 
+
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
   @media screen and (max-width: 980px){
       header{
@@ -631,9 +633,6 @@ flex: 1 30%;
         position: fixed;
       }
 
-      /* header h1{
-          width: 100%;
-      } */
 
       header h2 footer div{
           text-align: center;

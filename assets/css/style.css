@@ -39,12 +39,15 @@ header a {
     color: #fce138;
 }
 
-/* header nav {
+/* header .large-screen-nav {
     
     margin: 7px 0;
 } */
+
+
+
 /* set header's li elements to be inline instead of block */
-header nav ul{
+header .large-screen-nav ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -52,14 +55,14 @@ header nav ul{
     list-style: none;
 }
 
-header nav ul li a {
+header .large-screen-nav ul li a {
     padding: 10px 35px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-header nav ul li a:hover{
+header .large-screen-nav ul li a:hover{
     background: #fce138;
     color: #024e76;
     border-radius: 15px;
@@ -559,6 +562,40 @@ flex: 1 30%;
         content: "";
 }
 
+.burger-menu {
+    width: 35px;
+    height: 35px;
+    background-color: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color:#fce138;
+    border-radius: 5px;
+}
+
+.mobile-screen-nav {
+    position: absolute;
+    right: 0;
+    margin-top: 40px;
+    margin-right: 35px;
+    background-color: rgba(2, 78, 118, 0.5);
+    display: none;
+}
+
+.mobile-screen-nav ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.mobile-screen-nav ul li:hover {
+    color:#024e76;
+}
+
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
   @media screen and (max-width: 980px){
       header{
@@ -569,20 +606,9 @@ flex: 1 30%;
         position: relative;
       }
 
-      header h1{
+      /* header h1{
           width: 100%;
-          text-align: center;
-      }
-
-      header nav ul{
-          margin-top: 20px;
-          width: 100%;
-          justify-content: center;
-      }
-
-      header nav ul li a{
-          font-size: 20px;
-      }
+      } */
 
       header h2 footer div{
           text-align: center;
@@ -617,6 +643,9 @@ flex: 1 30%;
   }
   /*MEDIA QUERY FOR TABLETS AND SMALLER*/
   @media screen and (max-width: 768px){
+    .large-screen-nav {
+        display: none;
+    }
       section{
          padding: 30px 15px; 
       }
@@ -672,6 +701,11 @@ flex: 1 30%;
 
       .trainer-img::after{
           display:none;
+      }
+
+      header {
+          display: flex;
+          justify-content: space-between;
       }
   }
 
